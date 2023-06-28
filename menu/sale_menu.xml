@@ -1,0 +1,17 @@
+<odoo>
+    <record id="sale.menu_sale_invoicing" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+
+    <record id="sale.menu_product_template_action" model="ir.ui.menu">
+        <field name="active" eval="False"/>
+    </record>
+
+    <menuitem
+        id="menu_sale_product_handle"
+        name="Product Handle"
+        parent="sale.product_menu_catalog"
+        action="thinh_gia_phat_app.action_view_product_handle"
+        sequence="1"
+    />
+</odoo>

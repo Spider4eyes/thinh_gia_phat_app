@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="install_to_set_config" model="ir.config_parameter">
+            <field name="key">install_to_set_config</field>
+            <field name="value">0</field>
+        </record>
+    </data>
+
+    <function name="install_to_set_config" model="res.config.settings" />
+</odoo>

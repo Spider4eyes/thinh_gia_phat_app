@@ -1,0 +1,65 @@
+<odoo>
+    <record id="view_product_handle_tree" model="ir.ui.view">
+        <field name="name">view_product_handle_tree</field>
+        <field name="model">product.handle</field>
+        <field name="arch" type="xml">
+             <tree>
+                 <field name="name" />
+                 <field name="weight_per_uom" />
+                 <field name="active" invisible="1" />
+             </tree>
+        </field>
+    </record>
+
+    <record id="view_product_handle_form" model="ir.ui.view">
+        <field name="name">view_product_handle_form</field>
+        <field name="model">product.handle</field>
+        <field name="arch" type="xml">
+             <form>
+                 <sheet>
+                     <field name="active" invisible="1" />
+                     <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                     <group>
+                         <field name="name" />
+                         <label for="weight_per_uom"/>
+                         <div name="weight_per_uom">
+                             <field name="weight_per_uom" class="oe_inline"/>
+                             <span /><field name="weight_uom_name" class="oe_inline"/>
+                         </div>
+
+
+
+<!--                         <label for="weight_per_uom" class="mt-1"/>-->
+<!--                         <div>-->
+<!--                             <field name="weight_per_uom" class="oe_inline" />-->
+<!--                             <span class="ml-2"/><field name="weight_uom_name" />-->
+<!--                         </div>-->
+                     </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+    <record id="view_product_handle_search" model="ir.ui.view">
+        <field name="name">view_product_handle_search</field>
+        <field name="model">product.handle</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <field name="weight_per_uom" />
+                 <filter
+                     name="archive"
+                     string="Archived"
+                     domain="[('active', '=', False)]"
+                 />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_view_product_handle" model="ir.actions.act_window">
+        <field name="name">Product Handle</field>
+        <field name="res_model">product.handle</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_product_handle_tree"/>
+    </record>
+</odoo>

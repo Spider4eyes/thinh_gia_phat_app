@@ -1,0 +1,171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* thinh_gia_phat_app
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-25 07:23+0000\n"
+"PO-Revision-Date: 2023-06-25 07:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,help:thinh_gia_phat_app.field_product_product__detailed_type
+#: model:ir.model.fields,help:thinh_gia_phat_app.field_product_template__detailed_type
+msgid ""
+"A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
+"A consumable product is a product for which stock is not managed.\n"
+"A service is a non-material product you provide."
+msgstr ""
+"Sản phẩm lưu kho là sản phẩm bạn cần quản lý tồn kho. Bạn sẽ cần cài đặt thêm ứng dụng Tồn kho.\n"
+"Sản phẩm tiêu thụ là sản phẩm bạn không cần quản lý tồn kho.\n"
+"Dịch vụ là sản phẩm phi vật chất mà bạn cung cấp."
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__active
+msgid "Active"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model_terms:ir.ui.view,arch_db:thinh_gia_phat_app.view_product_handle_form
+#: model_terms:ir.ui.view,arch_db:thinh_gia_phat_app.view_product_handle_search
+msgid "Archived"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model,name:thinh_gia_phat_app.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cấu hình"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model,name:thinh_gia_phat_app.model_res_partner
+msgid "Contact"
+msgstr "Danh bạ"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_partner__country_id
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_users__country_id
+msgid "Country"
+msgstr "Quốc gia"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,help:thinh_gia_phat_app.field_product_product__uom_id
+#: model:ir.model.fields,help:thinh_gia_phat_app.field_product_template__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Đơn vị tình mặc định dùng cho tất cả hoạt động kho."
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__id
+msgid "ID"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__name
+msgid "Name"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model,name:thinh_gia_phat_app.model_product_template
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: thinh_gia_phat_app
+#: model:ir.actions.act_window,name:thinh_gia_phat_app.action_view_product_handle
+#: model:ir.model,name:thinh_gia_phat_app.model_product_handle
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_product__product_handle_id
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__product_handle_id
+#: model:ir.ui.menu,name:thinh_gia_phat_app.menu_sale_product_handle
+msgid "Product Handle"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__product_handle_weight
+msgid "Product Handle Weight"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_product__detailed_type
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_template__detailed_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model,name:thinh_gia_phat_app.model_product_product
+msgid "Product Variant"
+msgstr "Biến thể sản phẩm"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__real_qty
+msgid "Real Qty"
+msgstr "Số Lượng Thực Tế"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model,name:thinh_gia_phat_app.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Chi tiết đơn hàng"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_partner__state_id
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_users__state_id
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,help:thinh_gia_phat_app.field_product_handle__weight_per_uom
+msgid ""
+"The weight of handle per 1 unit measure of weight of bag, for ex: 1 kg bag "
+"need 0.2 kg handle"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__uom_id
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_product__uom_id
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_template__uom_id
+msgid "Unit of Measure"
+msgstr "Đơn vị tính"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__weight_uom_name
+msgid "Weight Name"
+msgstr ""
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__weight_per_uom
+msgid "Weight Per Uom"
+msgstr ""
