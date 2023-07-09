@@ -13,11 +13,26 @@
                 <field name="product_handle_id" optional="hide"/>
                 <field name="handle_quantity" optional="hide"/>
                 <field name="handle_weight" optional="hide"/>
-                <field name="estimated_ordered_handle_weight" optional="show"/>
-                <field name="ordered_product_weight" optional="show"/>
+                <field name="estimated_ordered_handle_weight" width="20%" optional="show"/>
+                <field name="ordered_product_weight" width="20%" optional="show"/>
             </xpath>
-            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom']" position="attributes">
-                <attribute name="width">5%</attribute>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="attributes">
+                <attribute name="width">20%</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_template_id']" position="attributes">
+                <attribute name="width">30%</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='tax_id']" position="attributes">
+                <attribute name="width">15%</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom'][1]" position="attributes">
+                <attribute name="width">10%</attribute>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom'][2]" position="attributes">
+                <attribute name="width">10%</attribute>
             </xpath>
         </field>
     </record>
