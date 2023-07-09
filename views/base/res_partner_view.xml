@@ -11,6 +11,23 @@
         <field name="sequence" eval="0"/>
     </record>
 
+    <record id="view_partner_tree_inherit" model="ir.ui.view">
+        <field name="name">view_partner_tree_inherit</field>
+        <field name="model">res.partner</field>
+        <field name="priority">999</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <field name="city" position="replace"/>
+            <field name="phone" position="after">
+                <field name="mobile" />
+                <field name="city" />
+            </field>
+            <field name="country_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
     <record id="view_partner_form_inherit" model="ir.ui.view">
         <field name="name">view_partner_form_inherit</field>
         <field name="model">res.partner</field>

@@ -6,9 +6,15 @@ class ProductHandle(models.Model):
     _description = "Product Handle"
 
     name = fields.Char(required=True)
-    weight_per_uom = fields.Float(
-        help="The weight of handle per 1 unit measure of weight of bag, for ex: 1 kg "
-             "bag need 0.2 kg handle"
+    quantity = fields.Integer(
+        required=True,
+        string="Số lượng",
+        help="Số lượng túi(túi + quai) ước tính trên 10kg"
+    )
+    weight = fields.Float(
+        string="Khối lượng quai",
+        required=True,
+        help="Khối lượng kg của quai trên 10 kg tổng (túi + quai)"
     )
     active = fields.Boolean(default=True)
     uom_id = fields.Many2one(

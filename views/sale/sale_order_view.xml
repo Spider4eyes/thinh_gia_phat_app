@@ -5,10 +5,19 @@
         <field name="inherit_id" ref="sale.view_order_form" />
         <field name="priority">999</field>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='order_line']/tree/field[@name='name']" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </xpath>
+
             <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom']" position="before">
-                <field name="product_handle_id" />
-                <field name="product_handle_weight" optional="show"/>
-                <field name="real_qty" />
+                <field name="product_handle_id" optional="hide"/>
+                <field name="handle_quantity" optional="hide"/>
+                <field name="handle_weight" optional="hide"/>
+                <field name="estimated_ordered_handle_weight" optional="show"/>
+                <field name="ordered_product_weight" optional="show"/>
+            </xpath>
+            <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom']" position="attributes">
+                <attribute name="width">5%</attribute>
             </xpath>
         </field>
     </record>

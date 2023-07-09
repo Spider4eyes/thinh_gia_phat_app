@@ -5,7 +5,7 @@
         <field name="arch" type="xml">
              <tree>
                  <field name="name" />
-                 <field name="weight_per_uom" />
+                 <field name="quantity" />
                  <field name="active" invisible="1" />
              </tree>
         </field>
@@ -20,20 +20,18 @@
                      <field name="active" invisible="1" />
                      <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
                      <group>
-                         <field name="name" />
-                         <label for="weight_per_uom"/>
-                         <div name="weight_per_uom">
-                             <field name="weight_per_uom" class="oe_inline"/>
-                             <span /><field name="weight_uom_name" class="oe_inline"/>
-                         </div>
+                         <group>
+                             <field name="name" />
+                         </group>
 
-
-
-<!--                         <label for="weight_per_uom" class="mt-1"/>-->
-<!--                         <div>-->
-<!--                             <field name="weight_per_uom" class="oe_inline" />-->
-<!--                             <span class="ml-2"/><field name="weight_uom_name" />-->
-<!--                         </div>-->
+                         <group>
+                             <field name="quantity" />
+                             <label for="weight"/>
+                             <div class="o_row">
+                                <field name="weight" class="oe_inline"/>
+                                <span><field name="weight_uom_name"/></span>
+                            </div>
+                         </group>
                      </group>
                  </sheet>
              </form>
@@ -46,7 +44,6 @@
         <field name="arch" type="xml">
             <search>
                 <field name="name" />
-                <field name="weight_per_uom" />
                  <filter
                      name="archive"
                      string="Archived"

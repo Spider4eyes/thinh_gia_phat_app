@@ -1,10 +1,20 @@
 {
     "name": "Thinh Gia Phat App",
     "author": "Truong Dinh Minh Duc",
-    "sequence": 1,
     "category": "Cloth Bag Company",
     "version": "16.0.0.0",
-    "depends": ["contacts", "product", "stock", "sale_management", "l10n_vn"],
+    "depends": [
+        "base",
+        "contacts",
+        "product",
+        "stock",
+        "sale_management",
+        "l10n_vn",
+
+        # OCA
+        "web_responsive",
+        "web_chatter_position",
+    ],
     "license": "LGPL-3",
     "data": [
         # Data
@@ -25,4 +35,7 @@
     "demo": [],
     "installable": True,
     "auto_install": False,
+    "assets": {
+        "web.assets_backend": ["thinh_gia_phat_app/static/scss/form_controller.scss"]
+    }
 }

@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 16.0-20230407\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-25 07:23+0000\n"
-"PO-Revision-Date: 2023-06-25 07:23+0000\n"
+"POT-Creation-Date: 2023-05-05 05:46+0000\n"
+"PO-Revision-Date: 2023-05-05 05:46+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,help:thinh_gia_phat_app.field_product_product__detailed_type
 #: model:ir.model.fields,help:thinh_gia_phat_app.field_product_template__detailed_type
-msgid ""
+msgid "Chi Tiết Loại Sản Phẩm"
 "A storable product is a product for which you manage stock. The Inventory app has to be installed.\n"
 "A consumable product is a product for which stock is not managed.\n"
 "A service is a non-material product you provide."
@@ -30,13 +30,13 @@ msgstr ""
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__active
 msgid "Active"
-msgstr ""
+msgstr "Hiệu Lực"
 
 #. module: thinh_gia_phat_app
 #: model_terms:ir.ui.view,arch_db:thinh_gia_phat_app.view_product_handle_form
 #: model_terms:ir.ui.view,arch_db:thinh_gia_phat_app.view_product_handle_search
 msgid "Archived"
-msgstr ""
+msgstr "Đã Vô Hiệu"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model,name:thinh_gia_phat_app.model_res_config_settings
@@ -44,25 +44,14 @@ msgid "Config Settings"
 msgstr "Cấu hình"
 
 #. module: thinh_gia_phat_app
-#: model:ir.model,name:thinh_gia_phat_app.model_res_partner
-msgid "Contact"
-msgstr "Danh bạ"
-
-#. module: thinh_gia_phat_app
-#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_partner__country_id
-#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_users__country_id
-msgid "Country"
-msgstr "Quốc gia"
-
-#. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Được Tạo Bởi"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Được Tạo Vào"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,help:thinh_gia_phat_app.field_product_product__uom_id
@@ -73,32 +62,32 @@ msgstr "Đơn vị tình mặc định dùng cho tất cả hoạt động kho."
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Tên Hiển Thị"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Chỉnh Sửa Lần Cuối Vào"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Cập Nhật Bởi"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Cập Nhật Vào"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__name
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model,name:thinh_gia_phat_app.model_product_template
@@ -112,12 +101,7 @@ msgstr "Sản phẩm"
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__product_handle_id
 #: model:ir.ui.menu,name:thinh_gia_phat_app.menu_sale_product_handle
 msgid "Product Handle"
-msgstr ""
-
-#. module: thinh_gia_phat_app
-#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__product_handle_weight
-msgid "Product Handle Weight"
-msgstr ""
+msgstr "Quai"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_product__detailed_type
@@ -133,25 +117,19 @@ msgstr "Biến thể sản phẩm"
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_sale_order_line__real_qty
 msgid "Real Qty"
-msgstr "Số Lượng Thực Tế"
+msgstr "Cân Nặng Thực"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model,name:thinh_gia_phat_app.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Chi tiết đơn hàng"
-
-#. module: thinh_gia_phat_app
-#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_partner__state_id
-#: model:ir.model.fields,field_description:thinh_gia_phat_app.field_res_users__state_id
-msgid "State"
-msgstr "Trạng thái"
+msgstr "Mục đơn bán hàng"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,help:thinh_gia_phat_app.field_product_handle__weight_per_uom
 msgid ""
 "The weight of handle per 1 unit measure of weight of bag, for ex: 1 kg bag "
 "need 0.2 kg handle"
-msgstr ""
+msgstr "Khối lượng kg của quai trên 10 kg tổng (túi + quai)"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__uom_id
@@ -163,9 +141,39 @@ msgstr "Đơn vị tính"
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__weight_uom_name
 msgid "Weight Name"
-msgstr ""
+msgstr "Đơn vị cân nặng"
 
 #. module: thinh_gia_phat_app
 #: model:ir.model.fields,field_description:thinh_gia_phat_app.field_product_handle__weight_per_uom
 msgid "Weight Per Uom"
-msgstr ""
+msgstr "Đơn vị cân nặng"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:base.field_res_bank__city
+#: model:ir.model.fields,field_description:base.field_res_company__city
+#: model:ir.model.fields,field_description:base.field_res_partner__city
+#: model:ir.model.fields,field_description:base.field_res_users__city
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private
+#: model_terms:ir.ui.view,arch_db:base.view_company_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_address_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+msgid "City"
+msgstr "Quận / Huyện / Thị Xã / Thành Phố thuộc tỉnh"
+
+#. module: thinh_gia_phat_app
+#: model:ir.model.fields,field_description:base.field_base_language_export__state
+#: model:ir.model.fields,field_description:base.field_base_partner_merge_automatic_wizard__state
+#: model:ir.model.fields,field_description:base.field_res_partner__state_id
+#: model:ir.model.fields,field_description:base.field_res_users__state_id
+#: model:ir.model.fields,field_description:base.field_res_users_deletion__state
+#: model_terms:ir.ui.view,arch_db:base.res_partner_view_form_private
+#: model_terms:ir.ui.view,arch_db:base.view_company_form
+#: model_terms:ir.ui.view,arch_db:base.view_country_state_form
+#: model_terms:ir.ui.view,arch_db:base.view_country_state_tree
+#: model_terms:ir.ui.view,arch_db:base.view_module_filter
+#: model_terms:ir.ui.view,arch_db:base.view_partner_address_form
+#: model_terms:ir.ui.view,arch_db:base.view_partner_form
+#: model_terms:ir.ui.view,arch_db:base.view_res_bank_form
+msgid "State"
+msgstr "Tỉnh / Thành Phố"
