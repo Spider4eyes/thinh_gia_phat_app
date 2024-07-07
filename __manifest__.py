@@ -2,7 +2,7 @@
     "name": "Thinh Gia Phat App",
     "author": "Truong Dinh Minh Duc",
     "category": "Cloth Bag Company",
-    "version": "17.0.0.0",
+    "version": "16.0.0.0",
     "depends": [
         "base",
         "contacts",
