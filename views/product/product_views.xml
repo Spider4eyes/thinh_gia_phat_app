@@ -14,7 +14,6 @@
         </field>
     </record>
 
-
     <record id="product_normal_form_view_inherit" model="ir.ui.view">
         <field name="name">product_normal_form_view_inherit</field>
         <field name="inherit_id" ref="product.product_normal_form_view" />
@@ -26,5 +25,4 @@
             </xpath>
         </field>
     </record>
-
 </odoo>
