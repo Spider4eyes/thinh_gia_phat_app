@@ -36,6 +36,7 @@
     "demo": [],
     "installable": True,
     "auto_install": False,
+    "application": True,
     "assets": {
         "web.assets_backend": ["thinh_gia_phat_app/static/scss/form_controller.scss"]
     }
