@@ -15,6 +15,9 @@
         "web_responsive",
         # This module is not available in OCA-Web v17 yet
         # "web_chatter_position",
+
+        # Customiztion
+        "vietnam_provinces_cities",
     ],
     "license": "LGPL-3",
     "data": [
