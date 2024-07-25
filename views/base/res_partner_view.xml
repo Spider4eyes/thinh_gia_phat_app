@@ -19,11 +19,14 @@
         <field name="arch" type="xml">
             <field name="city" position="replace"/>
             <field name="phone" position="after">
-                <field name="mobile" />
-                <field name="city" />
+                <field name="mobile" optional="show" />
+                <field name="city" optional="show" />
+                <field name="ward_id" optional="show" />
+                <field name="district_id" optional="show" />
+                <field name="state_id" optional="show" />
             </field>
             <field name="country_id" position="attributes">
-                <attribute name="invisible">1</attribute>
+                <attribute name="column_invisible">1</attribute>
             </field>
         </field>
     </record>
